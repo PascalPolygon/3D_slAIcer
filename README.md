@@ -2,7 +2,8 @@
 
 Exploring NN architectures to slice 3D meshes for 3D printing
 
-dataGeneration.ipynb
+Model and learning are in 3D_slAIcer.ipynb
+Data generation code in dataGeneration.ipynb
 
 # Write up
 
