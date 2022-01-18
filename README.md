@@ -16,7 +16,7 @@ The data for this project are edge features from OBJ CAD files. The OBJ files ar
 Figure 1: Sample obj file from coseg dataset
 
 We first read in a triangle mesh as list of faces and edges. This is done using the _readFile_ method from the Obj2verts class (obj2verts.py).
-Given a triangle mesh, we loop through all faces and the vertices that form those faces. An edge can be defined by 2 common edges of 2 adjascent triangles. This is done by the _findEdges_ method of Obj2verts.
+Given a triangle mesh, we loop through all faces and the vertices that form those faces. An edge can be defined by 2 common vertices of 2 adjascent triangles. This is done by the _findEdges_ method of Obj2verts.
 
 Once the edges are available, we must calculate the features of this edge. These are the features that will be used to train the model. Hanocka, et al [1] have implemented a meshCNN for the task of 3D mesh classification. meshCNN also learns on edge features. In [1] they define the following edge features:
 
